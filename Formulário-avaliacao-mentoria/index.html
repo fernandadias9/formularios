@@ -30,18 +30,18 @@
       <div class="name-last-name">
         <div class="input-wrapper">
           <label for="name">Nome</label>
-          <input type="text" id="name">
+          <input type="text" id="name" required>
         </div>  
 
         <div class="input-wrapper">
           <label for="last-name">Sobrenome</label>
-          <input type="text" id="last-name">
+          <input type="text" id="last-name" required>
         </div>
       </div>  
 
       <div class="input-wrapper">
         <label for="email">Email <span>(digite um email válido)</span></label>
-        <input type="email" id="email">
+        <input type="email" id="email" required>
       </div>
     </fieldset>
 
@@ -51,7 +51,7 @@
       <div class="input-wrapper">
         <label for="mentor">Selecione quem foi seu mentor</label>
 
-        <select id="mentor">
+        <select id="mentor" required>
           <option disabled selected>Selecione seu mentor</option>
           <option value="matheus">Matheus</option>
           <option value="fernanda">Fernanda</option>
@@ -60,8 +60,8 @@
 
       </div>  
       <div class="input-wrapper">
-        <label for="last-name">Feedback sobre o mentor</label>
-        <textarea id="feedback"></textarea>
+        <label for="feedback">Feedback sobre o mentor</label>
+        <textarea id="feedback" required minlength="20"></textarea>
       </div>    
 
       <div class="checkbox-wrapper">
